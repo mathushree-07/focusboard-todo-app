@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FocusBoard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <h2>📌 FocusBoard</h2>
+
+        <ul>
+            <li class="active">
+                <i class="fa-solid fa-inbox"></i>
+                Inbox
+            </li>
+
+            <li>
+                <i class="fa-solid fa-calendar-day"></i>
+                Today
+            </li>
+
+            <li>
+                <i class="fa-solid fa-calendar"></i>
+                Upcoming
+            </li>
+        </ul>
+
+    </aside>
+    <main class="content">
+
+        <div class="header">
+            <h1>Today's Tasks</h1>
+            <span id="taskCount">0 Tasks</span>
+        </div>
+
+        <div class="task-input">
+
+            <input
+            type="text"
+            id="taskInput"
+            placeholder="Add a new task...">
+
+            <button onclick="addTask()">
+                Add Task
+            </button>
+
+        </div>
+
+        <ul id="taskList"></ul>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
